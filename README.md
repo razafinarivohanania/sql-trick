@@ -19,5 +19,11 @@ ALTER TABLE offer ADD COLUMN is_sent BOOLEAN DEFAULT NULL
 ## Get MySQL version
 
 ```sql
-SELECT VERSION()
+SELECT version()
+```
+
+## List locked table on MySQL
+
+```sql
+SHOW OPEN tables WHERE in_use > 1
 ```
