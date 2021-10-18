@@ -41,3 +41,9 @@ Then get the id, and use the following query to stop your query
 ```sql
 KILL QUERY <id>
 ```
+
+## Get engine used by table on MySQL
+
+```sql
+SHOW TABLE status FROM <database> LIKE 'table_name'
+``
