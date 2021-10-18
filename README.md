@@ -15,3 +15,9 @@ eg :
 ```sql
 ALTER TABLE offer ADD COLUMN is_sent BOOLEAN DEFAULT NULL
 ```
+
+## Get MySQL version
+
+```sql
+SELECT VERSION()
+```
