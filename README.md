@@ -27,3 +27,17 @@ SELECT version()
 ```sql
 SHOW OPEN tables WHERE in_use > 1
 ```
+
+## Kill query currently in process
+
+First, show all query in process
+
+```sql
+SHOW processlist
+```
+
+Then get the id, and use the following query to stop your query
+
+```sql
+KILL QUERY <id>
+```
